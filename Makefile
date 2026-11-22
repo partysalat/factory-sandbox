@@ -1,3 +1,1 @@
-ci:
-	@echo "ci ok"
-.PHONY: ci
+ci: ; @test -z "$$GITHUB_ACTIONS" || test -e fixed.txt
